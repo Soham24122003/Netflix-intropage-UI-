@@ -130,13 +130,164 @@ nav button{
 }
 
 .btn-red-signin{
-
-
 background: rgb(229, 9, 20);
 color: rgb(255, 255, 255);
 padding-top: 4px;
 }
 
-.headerofsection2{
+section{
+    margin-left: max(20vw,20px);
+    margin-right: max(20vw,20px);
+
+    font-family: 'Courier New', Courier, monospace;
+    /* height: 200vh; */
+}
+
+.headofsection2 h2{
     color: white;
+}
+
+.btn-new{
+    box-sizing: border-box;
+    border: 1px solid white;
+    width: 10vw;
+    height: 5vh;
+    font-size: large;
+    font-weight: 600;
+    background-color: rgba(23,23,23,0.2);
+    color: white;
+}
+
+.cards{
+    padding:  2vh 0vh 2vh 0vh;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: stretch; 
+}
+
+.cards .now{
+    flex: 1;
+    box-sizing: border-box;
+    background-color: #202020;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    margin: 2.5vh;
+    padding: 5vh;
+    position: relative;
+}
+
+.cards h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.cards p{
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+.now img{
+    position: absolute;
+    right : 10px;
+    bottom: 10px;
+    z-index: 10;
+}
+
+.faq h2 {
+    text-align: center;
+    font-size: 48px;
+}
+
+.faq {
+    background: black;
+    color: white;
+    padding: 34px;
+}
+
+.faqbox:hover {
+    font-weight: bolder;
+    background: linear-gradient(90deg, rgba(9,0,0,1) 0%, rgba(154,76,76,1) 35%, rgba(238,200,200,1) 100%);
+    color: white;
+    
+}
+
+.faqbox svg {
+    filter: invert(1);
+}
+
+.faqbox {
+    transition: 2s cubic-bezier(0.05, 0.61, 0.41, 0.9 );
+    font-size: 24px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #2d2d2d;
+    padding: 24px;
+    max-width: 60vw;
+    margin: 34px auto;
+    cursor: pointer;
+}
+
+footer {
+    color: white;
+    max-width: 60vw;
+    margin: auto;
+    padding: 60px;
+}
+
+footer .questions {
+    padding: 34px 0;
+}
+
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+}
+
+
+@media screen and (max-width: 1300px) {
+
+    .faq h2 {
+        text-align: center;
+        font-size: 32px;
+    }
+
+    footer {
+        max-width: 90vw;
+        padding: 75px 0;
+    }
+
+    .footer-item{
+        align-items: center;
+    }
+ 
+
+}
+
+
+
+@media screen and (max-width: 1300px) {
+
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+    }
+}
+
+
+.footer a {
+    font-size: 14px;
+    color: white;
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
 }
