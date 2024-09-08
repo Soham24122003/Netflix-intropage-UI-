@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+body{
+    margin: 0;
+    background-color: black;
+}
+
+.main{
+    height: 80vh;
+    background-image: url("asserts/image/background1.jpg");
+    position: relative;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(1400px, 100vw);
+}
+
+/* ei part ta hoile kalo box jeida netflix er main photo da re dhaikka de*/ 
+.main .box{
+    height: 80vh;
+    width: 100% ;
+    background-color: black;
+    opacity: 0.69;
+    position: absolute;
+    top: 0;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    max-width: 150vh;
+    margin: auto;
+    justify-content: space-between;
+}
+
+nav img{
+    color: red;
+    position: relative;
+    z-index: 10;
+}
+
+nav button{
+    position: relative;
+    z-index: 10;
+}
+
+
+.texts{
+    font-family: "Roboto Condensed", sans-serif;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+}
+
+.texts> :first-child{
+    font-weight: 750;
+    font-size: 8vh;
+}
+
+.texts> :nth-child(2){
+    font-weight: 750;
+    font-size: 8vh;
+}
+
+.texts :nth-child(3){
+    font-weight: 500;
+    margin: 2vh;
+}
+
+.texts span{
+    text-align: center;
+}
+
+.mail {
+    justify-content: center;
+    text-align: center;
+    margin: 2vh;
+    font-weight: 500;
+}
+
+.mail input{
+    fill: currentColor;
+    box-sizing: border-box;
+    text-align: center;
+    
+    font-size: 2vh;
+    font-weight: 700;
+    min-height: 3.5rem;
+    min-width:50vh;
+    /*padding: 0.75rem 1.5rem;*/
+    border-radius: 0.25rem;
+    padding : 0;
+    border : 2px solid rgb(255, 255, 255);
+    background-color: rgba(23,23,23,0.2);
+    
+     color: rgb(255, 255, 255); 
+     
+}
+
+
+.sepration{
+    background-color: rgb(104, 18, 8);
+    height: 1vh ;
+}
+
+.btn{
+    padding: 3px 8px;
+    font-weight: bold;
+    color: azure;
+    background-color: rgba(23,23,23,0.2);
+    min-height: 2rem;
+    border-radius: 0.25rem;
+}
+
+.btn-red-log{
+    font-size: 2vh;
+    font-weight: 700;
+    min-height: 3.5rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.25rem;
+    background: rgb(229, 9, 20);
+    color: rgb(255, 255, 255);
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.btn-red-signin{
+
+
+background: rgb(229, 9, 20);
+color: rgb(255, 255, 255);
+padding-top: 4px;
+}
+
+.headerofsection2{
+    color: white;
+}
